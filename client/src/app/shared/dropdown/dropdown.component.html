@@ -1,6 +1,6 @@
 <div class="dropdown">
-  <span class="dropdown__selected">English</span>
-  <ul class="dropdown__list" *ngFor="let item of langs">
-    <li class="dropdown__item">{{item.language}}</li>
+  <span class="dropdown__selected">{{currentLang}}</span>
+  <ul class="dropdown__list">
+    <li class="dropdown__item" *ngFor="let item of langs" (click)="selectLanguage(item)">{{item.language}}</li>
   </ul>
 </div>

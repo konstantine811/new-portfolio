@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 //module
 import { AppRoutinModule } from './app-routing.module';
@@ -14,6 +15,7 @@ import { AppComponent } from './app.component';
   ],
   imports: [
     BrowserModule,
+    BrowserAnimationsModule,
     AppRoutinModule,
     SharedModule,
     HomeModule
